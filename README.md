@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Getting Started with Your Project
+Welcome to your new project! Follow these instructions to get your development environment set up and running.
 
-## Getting Started
+## Prerequisites
+Before you begin, ensure you have Node.js installed on your system. This project was built using Node.js version 18.x or later.
 
-First, run the development server:
+## Installation
+Install Dependencies:
 
-```bash
+Open a terminal in your project's root directory and run the following command to install the project's dependencies:
+
+´´´
+npm install
+Environment Variables:
+´´´
+For the project to function correctly, it needs access to environment-specific variables. Create a file named .env.local in the root of your project and add the following line:
+
+plaintext
+Copy code
+NEXT_PUBLIC_ALPHA_VANTAGE_API_KEY=A9S2F1Q6NZTTVXWD
+Replace A9S2F1Q6NZTTVXWD with your actual Alpha Vantage API key. If you don't have one, you can obtain it by signing up at Alpha Vantage's website.
+
+Running the Development Server
+Start the Development Server:
+
+Once the installation is complete and your .env.local file is configured, start the development server by running:
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Viewing the Application:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your web browser and navigate to http://localhost:3000 to view the application. You should see the project running and be able to interact with it.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Next Steps
+From here, you can start exploring the project's codebase and making changes. The development server will automatically reload if you make edits to the code, so you can see your changes in real-time.
+# Triple_Down
