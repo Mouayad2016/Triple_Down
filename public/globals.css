@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0; /* Dark text for light background */
+	--background-start-rgb: 237, 241, 242; /* Lighter gray for the start of the gradient */
+	--background-end-rgb: 255, 255, 255; /* Pure white for the end of the gradient */
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255; /* White text for dark background */
+		--background-start-rgb: 23, 23, 23; /* Slightly lighter black for start */
+		--background-end-rgb: 0, 0, 0; /* Pure black for the end */
+	}
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+		to bottom,
+		rgba(var(--background-start-rgb), 0.9),
+		/* Slightly transparent start */ rgb(var(--background-end-rgb))
+			/* Opaque end */
+	);
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
